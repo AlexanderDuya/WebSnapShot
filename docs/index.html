@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Enter URL for Screenshot</title>
+    <title>WebSnapShot - Take a Website Screenshot</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="urlForm" action="/screenshot" method="POST">
-      <h2>Enter website URL</h2>
-      <input type="url" name="url" placeholder="https://example.com" required />
-      <button type="submit">Take Screenshot</button>
-    </form>
+    <main>
+      <form id="urlForm" action="/screenshot" method="POST">
+        <h2>Enter a Website URL</h2>
+        <input
+          type="url"
+          name="url"
+          placeholder="https://example.com"
+          required
+        />
+        <button type="submit">Take Screenshot</button>
+        <p class="note">
+          Note: This demo needs a backend and won't work on GitHub Pages. But it
+          does work in the terminal!
+        </p>
+      </form>
+    </main>
+    <footer>
+      <h1>Developed by Alex</h1>
+    </footer>
   </body>
-  <footer><h1>Developed By Alex</h1></footer>
 </html>
